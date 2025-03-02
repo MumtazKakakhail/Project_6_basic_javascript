@@ -56,3 +56,4 @@ let findNumbers = numbers.find(item => item > 10);
     }
 
     // Use forEach() to log each color in uppercase.
+    
