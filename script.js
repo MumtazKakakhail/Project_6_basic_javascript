@@ -50,3 +50,29 @@ console.log("filter:", evenNumbers);
 
 
 // Use forEach() to log each color in uppercase.
+
+
+
+// Using the given webDevelopment array:
+
+let webDevelopment = [  
+    { Name: "Daniyal", class: "basic" }, 
+     { Name: "saliha", class: "basic" },  
+    { Name: "Sameer", class: "Advance" },  
+    { Name: "Sartaj", class: "Advance" },  
+    { Name: "Naji", class: "basic" },  
+    { Name: "shoaib", class: "Advance" }, 
+     { Name: "Mumtaz", class: "basic" }
+    ];
+
+    // Use filter() to separate "basic" and "Advance" students
+let Basic = webDevelopment.filter(item => item.class === "basic");
+    console.log( Basic);
+
+// Use map() to extract just the names from each filtered array
+
+let Adv = webDevelopment.filter(items => items.class==="Advance");
+console.log(Adv);
+
+let st = webDevelopment.map(items => items.Name==="basic");
+console.log(st);
