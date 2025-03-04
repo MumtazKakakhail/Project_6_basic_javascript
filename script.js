@@ -48,31 +48,35 @@ console.log("filter:", evenNumbers);
 // Loops and Iteration
 // Use a traditional for loop to log each color in your array along with its index.
 
-
 // Use forEach() to log each color in uppercase.
+colors.forEach((color) => {
+  console.log(color.toUpperCase());
+});
 
+// let numbers = [2, 4, 6, 8, 10];
+// Write a program that uses the reduce() method to check if all numbers in an array are even or if at least one number is odd.
 
 
 // Using the given webDevelopment array:
 
-let webDevelopment = [  
-    { Name: "Daniyal", class: "basic" }, 
-     { Name: "saliha", class: "basic" },  
-    { Name: "Sameer", class: "Advance" },  
-    { Name: "Sartaj", class: "Advance" },  
-    { Name: "Naji", class: "basic" },  
-    { Name: "shoaib", class: "Advance" }, 
-     { Name: "Mumtaz", class: "basic" }
-    ];
+let webDevelopment = [
+  { Name: "Daniyal", class: "basic" },
+  { Name: "saliha", class: "basic" },
+  { Name: "Sameer", class: "Advance" },
+  { Name: "Sartaj", class: "Advance" },
+  { Name: "Naji", class: "basic" },
+  { Name: "shoaib", class: "Advance" },
+  { Name: "Mumtaz", class: "basic" },
+];
 
-    // Use filter() to separate "basic" and "Advance" students
-let Basic = webDevelopment.filter(item => item.class === "basic");
-    console.log( Basic);
+// Use filter() to separate "basic" and "Advance" students
+let Basic = webDevelopment.filter((item) => item.class === "basic");
+console.log(Basic);
 
 // Use map() to extract just the names from each filtered array
 
-let Adv = webDevelopment.filter(items => items.class==="Advance");
+let Adv = webDevelopment.filter((items) => items.class === "Advance");
 console.log(Adv);
 
-let st = webDevelopment.map(items => items.Name==="basic");
+let st = webDevelopment.map((items) => items.Name === "basic");
 console.log(st);
