@@ -35,7 +35,7 @@ console.log(colors);
 colors.splice(3, 2, "sky-blue", "dark", "light-blue");
 console.log("splice:", colors);
 
-let numbers = [5, 8, 12, 3, 15, 7, 3, 11, 13, 26, 3];
+let numbers = [5, 8, 12, 3, 15, 7];
 
 //Create an array of numbers and use find() to locate the first number greater than 10.
 let findNumbers = numbers.find((item) => item > 10);
@@ -49,9 +49,7 @@ console.log("filter:", evenNumbers);
 // Use a traditional for loop to log each color in your array along with its index.
 
 // Use forEach() to log each color in uppercase.
-colors.forEach((color) => {
-  console.log(color.toUpperCase());
-});
+
 
 // let numbers = [2, 4, 6, 8, 10];
 // Write a program that uses the reduce() method to check if all numbers in an array are even or if at least one number is odd.
