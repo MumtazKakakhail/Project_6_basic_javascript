@@ -49,7 +49,7 @@ console.log("filter:", evenNumbers);
 // Use a traditional for loop to log each color in your array along with its index.
 for (let i = 0; i < colors.length; i++) {
   console.log(`Index ${i}: ${colors[i]}`);
-}
+} 
 // Use forEach() to log each color in uppercase.
 colors.forEach(color => {
     console.log(color.toUpperCase());
